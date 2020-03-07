@@ -4,7 +4,6 @@
 	|        GRAB MADE BY RAILY 	  |
 	|         GRAB MADE WITH <3    	  |
 	|         MADE IN CHERNOBYL       |
-	|    PLEASE, KATH SUCK MY DICK    |
 	-----------------------------------
 		                                  **/
 package Engine
@@ -28,7 +27,7 @@ package Engine
         public var versionURL:String;
         public var loader:URLLoader;
         public var loaderVars:Object;
-		public var Game:*;
+	public var Game:*;
         public var titleDomain:ApplicationDomain;
 
         public function MainTimeline()
@@ -187,7 +186,7 @@ package Engine
         function frame1()
         {
             Security.allowDomain("*");
-			this.mcMenu.visible = false;
+	    this.mcMenu.visible = false;
             stop();
             this.sURL = "https://game.aq.com/game/";
             this.loginURL = "https://game.aq.com/game/cf-userlogin.asp";
@@ -198,11 +197,11 @@ package Engine
             this.loader.addEventListener(Event.COMPLETE, this.onDataComplete);
             this.loader.load(new URLRequest(this.versionURL));
             this.titleDomain = new ApplicationDomain();
-			this.btnGrabber.addEventListener(MouseEvent.CLICK, buttonPress);
-			this.mcMenu.btnShop.addEventListener(MouseEvent.CLICK, buttonPress);
-			this.mcMenu.btnClose.addEventListener(MouseEvent.CLICK, buttonPress);
-			this.mcMenu.btnQuest.addEventListener(MouseEvent.CLICK, buttonPress);
-			this.mcMenu.btnCopy.addEventListener(MouseEvent.CLICK, buttonPress);
+	    this.btnGrabber.addEventListener(MouseEvent.CLICK, buttonPress);
+	    this.mcMenu.btnShop.addEventListener(MouseEvent.CLICK, buttonPress);
+	    this.mcMenu.btnClose.addEventListener(MouseEvent.CLICK, buttonPress);
+	    this.mcMenu.btnQuest.addEventListener(MouseEvent.CLICK, buttonPress);
+	    this.mcMenu.btnCopy.addEventListener(MouseEvent.CLICK, buttonPress);
             return;
         }
 
